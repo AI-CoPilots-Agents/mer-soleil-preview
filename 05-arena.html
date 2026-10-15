@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mer Soleil Equestrian Ranch | Training Arena, Lessons & Boarding in Loxahatchee Groves</title>
+<meta name="description" content="A 100' x 200' manicured arena with six mirrors, a round pen, and Endel Ots training here twice a week. Lessons and boarding in Loxahatchee Groves, FL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: an athlete's program sheet. Condensed uppercase type, royal blue and sun gold on white, the arena drawn to scale as the centrepiece. */
+:root{
+  --white:#FFFFFF; --ice:#EEF2F8; --ink:#0D1A33; --ink-2:#44506A; --royal:#2453B3; --royal-2:#1B3F8A; --sun:#F2B33D; --line:rgba(13,26,51,.14); --sand:#E9DFCB;
+  --display:"Big Shoulders Display", "Oswald", "Arial Narrow", sans-serif;
+  --body:"Archivo", "Helvetica Neue", system-ui, sans-serif;
+  --gl:max(20px, env(safe-area-inset-left,0px)); --gr:max(20px, env(safe-area-inset-right,0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font:400 1.03rem/1.6 var(--body)}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
+a{color:inherit;text-underline-offset:.2em}
+::selection{background:var(--sun);color:var(--ink)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.wrap{max-width:1320px;margin:0 auto;padding-left:var(--gl);padding-right:var(--gr)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;margin:0;text-wrap:balance;letter-spacing:.005em}
+h1{font-weight:900;font-size:clamp(4rem,13vw,11.5rem);line-height:.84}
+h2{font-weight:800;font-size:clamp(2.6rem,6vw,5.2rem);line-height:.9}
+h3{font-weight:800;font-size:1.7rem;line-height:1}
+p{margin:0}
+.btn{display:inline-flex;align-items:center;gap:.5em;min-height:52px;padding:.8em 1.5em;font:700 .95rem/1 var(--body);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:background .2s ease,color .2s ease}
+.btn-sun{background:var(--sun);color:var(--ink)}
+.btn-sun:hover{background:#F6C460}
+.btn-royal{background:var(--royal);color:#fff}
+.btn-royal:hover{background:var(--royal-2)}
+.btn-line{border-color:currentColor}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--ink);color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:9px}
+.brand span{font:900 1.6rem/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.brand span em{font-style:normal;color:var(--sun)}
+.nav{display:flex;align-items:center;gap:26px;font:600 .88rem var(--body);letter-spacing:.08em;text-transform:uppercase}
+.nav a{text-decoration:none;color:#C9D3E6}
+.nav a:hover{color:#fff}
+.nav .btn,.nav .btn:hover{color:var(--ink);min-height:44px}
+.menu-btn{display:none;min-height:44px;padding:0 16px;border:2px solid #fff;background:transparent;color:#fff;font:700 .85rem var(--body);letter-spacing:.08em;text-transform:uppercase}
+
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden}
+.hero img{width:100%;height:clamp(460px,64vw,820px);object-fit:cover;object-position:50% 40%;opacity:.78}
+.hero .over{position:absolute;inset:auto 0 0 0;padding-block:0 clamp(28px,4vw,56px);background:linear-gradient(transparent,rgba(13,26,51,.92) 55%)}
+.hero h1{padding-top:120px}
+.hero h1 span{color:var(--sun);display:block}
+.hero .row{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:end;justify-content:space-between;margin-top:22px}
+.hero .row p{max-width:52ch;color:#D7DEEC;font-size:1.1rem}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-line{color:#fff}
+
+.ticker{background:var(--sun);color:var(--ink);overflow:hidden;border-block:3px solid var(--ink)}
+.ticker .track{display:flex;flex-wrap:wrap;justify-content:center;max-width:1320px;margin:0 auto}
+.ticker span{font:900 1.35rem/1 var(--display);text-transform:uppercase;letter-spacing:.04em;padding:16px 22px;white-space:nowrap;display:flex;align-items:center;gap:22px}
+.ticker span:not(:last-child)::after{content:"";width:9px;height:9px;background:var(--ink);transform:rotate(45deg)}
+
+section{padding-block:clamp(72px,9vw,128px)}
+.arena .head{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,5vw,72px);align-items:end}
+.arena .head p{color:var(--ink-2);font-size:1.1rem}
+.plan{margin-top:48px;background:var(--ice);padding:clamp(16px,3vw,40px);overflow-x:auto}
+.plan svg{display:block;width:100%;min-width:600px;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:18px;font-size:.9rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{display:inline-block;width:22px;height:0;border-top:3px solid var(--ink)}
+.legend i.dash{border-top:2px dashed var(--royal)}
+.legend i.mir{border-top:6px solid #8DB9E8}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;border-top:3px solid var(--ink)}
+.stats div{padding:22px 20px 0 0;display:grid;gap:6px}
+.stats b{font:900 3rem/1 var(--display);color:var(--royal)}
+.stats span{color:var(--ink-2);font-size:.95rem}
+
+.endel{background:var(--royal);color:#fff;position:relative;overflow:hidden}
+.endel .wrap{display:grid;grid-template-columns:8fr 4fr;gap:clamp(24px,5vw,72px);align-items:end}
+.endel h2{font-size:clamp(3rem,7.4vw,6.6rem)}
+.endel h2 span{color:#FFD27A}
+.endel p{color:#DCE5F7;font-size:1.1rem}
+
+.programs .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-left:3px solid var(--ink)}
+.prog{padding:0 24px 8px;border-right:1px solid var(--line);display:grid;gap:12px;align-content:start}
+.prog .lvl{font:800 .82rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--royal)}
+.prog p{color:var(--ink-2)}
+.programs .why{margin-top:44px;display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,56px);align-items:center}
+.programs .why img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.programs .why ul{list-style:none;padding:0;margin:14px 0 22px;display:grid;gap:10px;font-weight:600}
+.programs .why li{display:flex;gap:12px;align-items:center}
+.programs .why li::before{content:"";width:12px;height:12px;background:var(--sun);transform:rotate(45deg);flex:none}
+
+.board{background:var(--ice)}
+.board .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px);margin-top:44px}
+.tier{background:#fff;padding:28px;display:grid;gap:12px;align-content:start;border-top:6px solid var(--royal)}
+.tier:nth-child(2){border-top-color:var(--sun)}
+.tier:nth-child(3){border-top-color:var(--ink)}
+.tier p{color:var(--ink-2)}
+.board .foot{margin-top:28px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+.board .foot p{color:var(--ink-2);max-width:62ch}
+
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;padding:0}
+.gallery img{width:100%;height:100%;object-fit:cover}
+.gallery .a{grid-column:span 5;aspect-ratio:4/5}
+.gallery .b{grid-column:span 7;aspect-ratio:7/5}
+.gallery .c{grid-column:span 4;aspect-ratio:1}
+.gallery .d{grid-column:span 4;aspect-ratio:1}
+.gallery .e{grid-column:span 4;aspect-ratio:1}
+
+.kristina .wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,5vw,72px);align-items:center}
+.kristina img{width:100%;aspect-ratio:1;object-fit:cover;object-position:35% 50%}
+.kristina .text{display:grid;gap:18px}
+.kristina .text p{color:var(--ink-2)}
+.todo{background:rgba(242,179,61,.3);padding:0 .25em}
+
+.faq .wrap{display:grid;grid-template-columns:4fr 8fr;gap:clamp(24px,5vw,72px)}
+details{border-top:2px solid var(--ink);padding:18px 0}
+details:last-child{border-bottom:2px solid var(--ink)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font:800 1.45rem/1.1 var(--display);text-transform:uppercase}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--royal)}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--ink-2);max-width:62ch}
+
+.visit{background:var(--ink);color:#fff}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px)}
+.visit .phone{font:900 clamp(3rem,7vw,5.4rem)/.9 var(--display);color:var(--sun);margin-top:16px;user-select:all}
+.visit address{font-style:normal;color:#C9D3E6;margin-top:12px}
+.visit .btn-line{color:#fff}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start}
+.field{display:grid;gap:6px}
+.field.wide{grid-column:1 / -1}
+label{font:700 .78rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:#C9D3E6}
+input,select,textarea{font:inherit;color:#fff;background:#152648;border:2px solid #2A3E66;padding:12px;width:100%;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sun)}
+textarea{min-height:110px;resize:vertical}
+.form-note{grid-column:1 / -1;min-height:1.4em;color:var(--sun);font-weight:600}
+footer{background:#081226;color:#9AA8C3;padding-block:32px;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+
+.dock{position:fixed;right:max(16px, env(safe-area-inset-right,0px));bottom:max(16px, env(safe-area-inset-bottom,0px));z-index:25;display:flex;gap:0;box-shadow:0 14px 30px -10px rgba(0,0,0,.35)}
+.dock a{min-height:48px;display:inline-flex;align-items:center;justify-content:center;padding:0 18px;font:700 .82rem var(--body);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;background:var(--ink);color:#fff}
+.dock a:last-child{background:var(--sun);color:var(--ink)}
+.concept-pill{position:fixed;left:max(14px, env(safe-area-inset-left,0px));bottom:max(14px, env(safe-area-inset-bottom,0px));z-index:30;background:#fff;color:var(--ink);font:600 .78rem/1 var(--body);padding:10px 14px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px rgba(13,26,51,.25)}
+
+@media (max-width:980px){
+  .nav a{display:none}
+  .menu-btn{display:inline-flex;align-items:center}
+  .nav.open{position:absolute;top:70px;left:0;right:0;display:flex;flex-direction:column;align-items:stretch;gap:0;background:var(--ink);padding:4px var(--gr) 18px var(--gl)}
+  .nav.open a{display:block;padding:14px 0;border-bottom:1px solid #22345A}
+  .nav.open .btn{display:inline-flex;justify-content:center;margin-top:14px}
+  .arena .head,.endel .wrap,.programs .why,.kristina .wrap,.faq .wrap,.visit .wrap{grid-template-columns:1fr}
+  .programs .grid{grid-template-columns:1fr 1fr;border-left:0}
+  .prog{border-right:0;border-left:3px solid var(--ink);padding-bottom:24px}
+  .board .grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .gallery .a,.gallery .b{grid-column:span 12}
+  .gallery .c,.gallery .d,.gallery .e{grid-column:span 6}
+  .gallery .e{grid-column:span 12;aspect-ratio:2/1}
+}
+@media (max-width:560px){
+  .programs .grid{grid-template-columns:1fr}
+  form{grid-template-columns:1fr}
+  .dock{left:max(12px, env(safe-area-inset-left,0px));right:max(12px, env(safe-area-inset-right,0px))}
+  .dock a{flex:1;padding:0 8px}
+  .concept-pill{bottom:calc(max(14px, env(safe-area-inset-bottom,0px)) + 62px);font-size:.72rem}
+  .hero h1{padding-top:70px}
+  .ticker span{font-size:1.05rem;padding:10px 12px;gap:12px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="09-geometric-icon.svg" alt="" width="40" height="40"><span>Mer <em>Soleil</em></span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#arena">The arena</a>
+      <a href="#programs">Lessons</a>
+      <a href="#boarding">Boarding</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-sun" href="sms:+12146209711">Text Kristina</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1" style="padding:0">
+    <img src="jump.jpg" alt="A rider in black clearing a striped oxer at a horse show" width="1179" height="607">
+    <div class="over">
+      <div class="wrap">
+        <h1 id="h1">Built for <span>the work.</span></h1>
+        <div class="row">
+          <p>A 100' × 200' arena with six mirrors, a round pen, and Endel Ots, the U.S. dressage team's traveling reserve at Paris 2024, training here twice a week.</p>
+          <div class="ctas"><a class="btn btn-sun" href="sms:+12146209711">Book a lesson</a><a class="btn btn-line" href="#arena">See the arena</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" role="list" aria-label="Facility highlights"><div class="track">
+    <span role="listitem">100' × 200' arena</span><span role="listitem">Six mirrors</span><span role="listitem">Round pen</span><span role="listitem">12 paddocks</span><span role="listitem">19 stalls</span><span role="listitem">Cameras 24/7</span>
+  </div></div>
+
+  <section class="arena" id="arena" aria-labelledby="h-arena">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="h-arena">Room for a full dressage court, and then some.</h2>
+        <p>100' × 200' is about 30 × 61 meters. A standard large dressage court is 20 × 60 meters, so a full test fits with roughly ten meters to spare across. Manicured footing, six large mirrors, and space for jumping, polo practice and training.</p>
+      </div>
+      <figure class="plan" style="margin:48px 0 0">
+        <svg viewBox="-40 -90 980 560" role="img" aria-label="Plan of the 100 by 200 foot arena with a standard 20 by 60 meter dressage court drawn inside to scale, and six mirrors along one long side">
+          <rect x="0" y="0" width="800" height="400" fill="#E9DFCB" stroke="#0D1A33" stroke-width="4"/>
+          <g fill="#8DB9E8" stroke="#0D1A33" stroke-width="1.5">
+            <rect x="70" y="-26" width="70" height="14"/><rect x="185" y="-26" width="70" height="14"/><rect x="300" y="-26" width="70" height="14"/>
+            <rect x="430" y="-26" width="70" height="14"/><rect x="545" y="-26" width="70" height="14"/><rect x="660" y="-26" width="70" height="14"/>
+          </g>
+          <rect x="6.3" y="68.8" width="787.4" height="262.4" fill="none" stroke="#2453B3" stroke-width="2.5" stroke-dasharray="10 7"/>
+          <g font-family="Archivo, sans-serif" font-weight="700" font-size="20" fill="#2453B3" text-anchor="middle">
+            <text x="26" y="207">A</text><text x="774" y="207">C</text>
+            <text x="85" y="94">K</text><text x="242" y="94">V</text><text x="400" y="94">E</text><text x="557" y="94">S</text><text x="715" y="94">H</text>
+            <text x="85" y="320">F</text><text x="242" y="320">P</text><text x="400" y="320">B</text><text x="557" y="320">R</text><text x="715" y="320">M</text>
+          </g>
+          <g stroke="#0D1A33" stroke-width="2" fill="none">
+            <path d="M0 440 V460 M800 440 V460 M0 450 H800"/>
+            <path d="M840 0 H860 M840 400 H860 M850 0 V400"/>
+          </g>
+          <g font-family="Big Shoulders Display, sans-serif" font-weight="800" font-size="30" fill="#0D1A33">
+            <text x="400" y="440" text-anchor="middle">200 FT</text>
+            <text x="0" y="0" text-anchor="middle" transform="translate(892 200) rotate(90)">100 FT</text>
+            <text x="400" y="-44" text-anchor="middle">SIX MIRRORS</text>
+          </g>
+        </svg>
+      </figure>
+      <div class="legend"><span><i></i>Arena, 100' × 200'</span><span><i class="dash"></i>Standard 20 × 60 m dressage court, to scale</span><span><i class="mir"></i>Mirrors (placement shown for illustration)</span></div>
+      <div class="stats">
+        <div><b>6</b><span>large mirrors on the rail</span></div>
+        <div><b>1</b><span>round pen for groundwork and lunging</span></div>
+        <div><b>12</b><span>outdoor paddocks</span></div>
+        <div><b>24/7</b><span>camera coverage</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="endel" aria-labelledby="h-endel">
+    <div class="wrap">
+      <h2 id="h-endel">Endel Ots trains here <span>twice a week.</span></h2>
+      <p>U.S. dressage rider and trainer, and traveling reserve for the U.S. Dressage Team at the 2024 Paris Olympics. Same arena, same mirrors, same footing your horse works on.</p>
+    </div>
+  </section>
+
+  <section class="programs" id="programs" aria-labelledby="h-prog">
+    <div class="wrap">
+      <h2 id="h-prog">Programs, from lead line to centerline.</h2>
+      <div class="grid">
+        <article class="prog"><span class="lvl">Age 4 and up</span><h3>Lead line</h3><p>First rides that build trust before technique.</p></article>
+        <article class="prog"><span class="lvl">One on one</span><h3>Private coaching</h3><p>All of the instructor's attention, on your goal.</p></article>
+        <article class="prog"><span class="lvl">Small groups</span><h3>Group classes</h3><p>Riders at your level. More fun, less pressure.</p></article>
+        <article class="prog"><span class="lvl">School breaks</span><h3>Holiday camps</h3><p>Barn days when school is out.</p></article>
+      </div>
+      <div class="why">
+        <img src="pony-friends-sm.jpg" alt="A rider in a sun hat with a paint horse and a palomino miniature pony" width="675" height="900" loading="lazy" style="object-position:50% 45%">
+        <div>
+          <h3 style="font-size:2.2rem">Quoted to your goal, not a package</h3>
+          <ul><li>Accredited instructors</li><li>A supportive, fun place to learn</li><li>Access to the arena and trails</li><li>Watch from the shaded lounge</li></ul>
+          <a class="btn btn-royal" href="sms:+12146209711">Get a lesson plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="board" id="boarding" aria-labelledby="h-board">
+    <div class="wrap">
+      <h2 id="h-board">Board where you train.</h2>
+      <div class="grid">
+        <article class="tier"><h3>Full board</h3><p>Daily feeding, clean and comfortable stalls, regular turnout and ongoing health monitoring. You show up and ride.</p></article>
+        <article class="tier"><h3>Half board</h3><p>Feeding and turnout shared between you and our staff. Stay in the routine without living in it.</p></article>
+        <article class="tier"><h3>Dry board</h3><p>You handle feeding, grooming and turnout, with a 12' × 12' stall and paddock access.</p></article>
+      </div>
+      <div class="foot"><p>Two barns (one brand new), 19 stalls at 12' × 12', 12 paddocks. Quoted per horse; multi-horse discounts.</p><a class="btn btn-royal" href="sms:+12146209711">Ask for a quote</a></div>
+    </div>
+  </section>
+
+  <section class="gallery" aria-label="Photos">
+    <img class="a" src="chestnut-look-sm.jpg" alt="A chestnut horse looking back over its shoulder" width="618" height="900" loading="lazy">
+    <img class="b" src="chestnut-profile.jpg" alt="A chestnut horse standing by a fence at golden hour" width="1206" height="769" loading="lazy">
+    <img class="c" src="stall-new-sm.jpg" alt="A stall in the new barn" width="755" height="900" loading="lazy">
+    <img class="d" src="paddock-grazing-sm.jpg" alt="Horses grazing in a paddock" width="900" height="675" loading="lazy">
+    <img class="e" src="paddock-sun-sm.jpg" alt="Morning sun over a paddock" width="900" height="675" loading="lazy">
+  </section>
+
+  <section class="kristina" aria-labelledby="h-kris">
+    <div class="wrap">
+      <img src="chestnut-head-sm.jpg" alt="Portrait of a chestnut horse in a bridle" width="900" height="584" loading="lazy">
+      <div class="text">
+        <h2 id="h-kris">Kristina runs the barn.</h2>
+        <p>Riding since six, Grand Champion at eleven, owner of Cirelli Sport Horses. Kristina manages Mer Soleil herself, and she's the one who answers your text. Looking for your next horse? Ask what Cirelli Sport Horses has available.</p>
+        <p><span class="todo">“A rider's quote about training here goes in this spot.”</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" aria-labelledby="h-faq" style="padding-top:0">
+    <div class="wrap">
+      <h2 id="h-faq">Quick answers.</h2>
+      <div>
+        <details><summary>What disciplines can I ride?</summary><p>Dressage, jumping, polo practice and general training all fit in the 100' × 200' arena.</p></details>
+        <details><summary>Can I bring my own trainer?</summary><p><span class="todo">Kristina to answer.</span></p></details>
+        <details><summary>How are lessons priced?</summary><p>Quoted to the rider and the goal. Text Kristina for a plan and a number.</p></details>
+        <details><summary>How young can riders start?</summary><p>Four, on a lead line.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="h-visit">
+    <div class="wrap">
+      <div>
+        <h2 id="h-visit">Come ride the arena.</h2>
+        <p class="phone">(214) 620-9711</p>
+        <address>14345 Tripp Rd N, Loxahatchee, FL 33470 · Text preferred</address>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px"><a class="btn btn-sun" href="sms:+12146209711">Text Kristina</a><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=14345+Tripp+Rd+N+Loxahatchee+FL+33470" target="_blank" rel="noopener">Directions</a></div>
+      </div>
+      <form id="inquiry" novalidate>
+        <div class="field"><label for="f-name">Name</label><input id="f-name" autocomplete="name"></div>
+        <div class="field"><label for="f-phone">Mobile</label><input id="f-phone" type="tel" autocomplete="tel"></div>
+        <div class="field wide"><label for="f-int">I want</label><select id="f-int"><option>Lessons</option><option>Training</option><option>Boarding</option><option>A tour</option></select></div>
+        <div class="field wide"><label for="f-goal">My goal this year</label><textarea id="f-goal"></textarea></div>
+        <div class="field wide"><button class="btn btn-sun" type="submit">Send to Kristina</button></div>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>Mer Soleil Equestrian Ranch · 14345 Tripp Rd N, Loxahatchee, FL 33470</span><span>© 2026</span></div></footer>
+<nav class="dock" aria-label="Quick contact"><a href="tel:+12146209711">Call</a><a href="sms:+12146209711">Text</a><a href="#visit">Book</a></nav>
+<a class="concept-pill" href="index.html">Concept 05 · Arena · All concepts</a>
+<script>
+const btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.textContent=o?'Close':'Menu'});
+nav.addEventListener('click',e=>{if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='Menu'}});
+document.getElementById('inquiry').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formNote').textContent='Sample site: in the finished build this goes straight to Kristina.'});
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mer Soleil Concepts</title>
+<meta property="og:title" content="Mer Soleil: website and logo concepts">
+<meta property="og:description" content="Six website directions and twelve logo concepts for Mer Soleil Equestrian Ranch.">
+<meta property="og:image" content="01-golden-hour-desktop.jpg">
+<style>html{color-scheme:light}body{margin:0}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+/* Layout: a client presentation folder. Quiet frame, the work does the talking: concept cards with real screenshots, logos on paper tiles, downloads at the end. */
+:root{
+  --bg:#F5F6F8; --surface:#FFFFFF; --fg:#16233F; --muted:#56607A; --accent:#9A6B12; --accent-bg:#F6E9CF; --line:rgba(22,35,63,.12); --btn-fg:#FFFFFF;
+  --paper:#FFFFFF; --paper-line:rgba(22,35,63,.10);
+  --display:"Newsreader", Georgia, serif; --body:"Hanken Grotesk", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0F1626; --surface:#172036; --fg:#EEF1F7; --muted:#A9B3C8; --accent:#E9AE3B; --accent-bg:rgba(233,174,59,.14); --line:rgba(238,241,247,.12); --btn-fg:#0F1626; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1626; --surface:#172036; --fg:#EEF1F7; --muted:#A9B3C8; --accent:#E9AE3B; --accent-bg:rgba(233,174,59,.14); --line:rgba(238,241,247,.12); --btn-fg:#0F1626; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:400 1rem/1.6 var(--body)}
+*{box-sizing:border-box}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.page{max-width:1180px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:40px 72px}
+h1,h2,h3{font-family:var(--display);font-weight:500;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2.2rem,5.4vw,3.8rem);line-height:1.02;max-width:18ch}
+h2{font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1.1}
+h3{font-size:1.45rem;line-height:1.15}
+p{margin:0}
+.masthead{display:grid;grid-template-columns:auto 1fr;gap:20px 28px;align-items:center;padding-bottom:36px;border-bottom:1px solid var(--line)}
+.masthead img{width:84px}
+.masthead .lead{grid-column:1 / -1;max-width:64ch;color:var(--muted);font-size:1.12rem}
+.masthead .meta{grid-column:1 / -1;font-size:.9rem;color:var(--muted)}
+section{padding-block:48px 8px}
+.sec-head{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:baseline;margin-bottom:24px}
+.sec-head p{color:var(--muted);max-width:56ch}
+.concepts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.shots{position:relative;background:var(--bg);padding:18px 18px 0;border-bottom:1px solid var(--line)}
+.shots .desk{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:8px 8px 0 0;box-shadow:0 1px 0 var(--line)}
+.shots .phone{position:absolute;right:22px;bottom:-14px;width:22%;aspect-ratio:1/2;object-fit:cover;object-position:top;border-radius:12px;border:3px solid var(--fg);box-shadow:0 12px 24px -12px rgba(10,16,30,.55)}
+.card .body{padding:26px 22px 22px;display:grid;gap:10px;align-content:start}
+.card .num{font:600 .8rem/1 var(--body);color:var(--accent);font-variant-numeric:tabular-nums}
+.card blockquote{margin:0;font:500 1.15rem/1.3 var(--display);color:var(--fg)}
+.card dl{margin:4px 0 0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.92rem}
+.card dt{color:var(--muted)}
+.card dd{margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--fg);text-decoration:none;font:600 .92rem var(--body);color:var(--fg);background:transparent;cursor:pointer}
+.btn.solid{background:var(--fg);color:var(--btn-fg)}
+.btn.small{min-height:36px;padding:0 12px;font-size:.84rem}
+.btn:hover{background:var(--fg);color:var(--btn-fg)}
+.logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.tile .art{background:var(--paper);height:230px;display:grid;place-items:center;padding:22px;border-bottom:1px solid var(--paper-line)}
+.tile .art img{max-height:186px;width:auto;max-width:100%}
+.tile .body{padding:16px 16px 14px;display:grid;gap:6px;align-content:start}
+.tile h3{font-size:1.15rem}
+.tile p{color:var(--muted);font-size:.9rem}
+.packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pack{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:10px;align-content:start}
+.pack p{color:var(--muted);font-size:.93rem}
+.note{min-height:1.5em;margin-top:14px;font-size:.92rem;color:var(--accent)}
+.next{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.next li{counter-increment:s;background:var(--accent-bg);border-radius:14px;padding:22px;display:grid;gap:8px;align-content:start}
+.next li::before{content:counter(s);font:600 2rem/1 var(--display);color:var(--accent)}
+.next p{color:var(--muted)}
+.foot{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;max-width:80ch}
+@media (max-width:860px){.concepts{grid-template-columns:1fr}.logos{grid-template-columns:repeat(2,minmax(0,1fr))}.packs,.next{grid-template-columns:1fr}}
+@media (max-width:520px){.logos{grid-template-columns:1fr}.masthead{grid-template-columns:1fr}.masthead img{width:64px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<main class="page">
+  <header class="masthead">
+    <img src="mark-arch.svg" alt="" width="84" height="103">
+    <h1>Website and logo concepts for Mer Soleil</h1>
+    <p class="lead">Six different directions for the new website, and twelve ways the logo could grow. Every website below is a working page: open it on your phone and scroll. Mixing is welcome, like the layout from one and the logo from another.</p>
+    <p class="meta">Prepared for Kristina Cirelli by Andres Ruiz · October 2026 · Uses your photos and the colors of your current emblem</p>
+    <div class="btns" style="grid-column:1 / -1"><a class="btn solid" href="#h-sites">See the six websites</a><a class="btn" href="Mer-Soleil-Website-and-Logo-Concepts.pdf">Download the PDF</a></div>
+  </header>
+
+  <section aria-labelledby="h-sites">
+    <div class="sec-head"><h2 id="h-sites">Six website directions</h2><p>Each one has its own look and its own voice. Notice which headline sounds most like you.</p></div>
+    <div class="concepts">
+      <article class="card">
+        <div class="shots"><img class="desk" src="01-golden-hour-desktop.jpg" alt="Golden Hour concept on a laptop" width="864" height="540" loading="lazy"><img class="phone" src="01-golden-hour-phone.jpg" alt="Golden Hour concept on a phone" width="390" height="780" loading="lazy"></div>
+        <div class="body"><span class="num">Concept 01</span><h3>Golden Hour</h3><blockquote>“Where good horses come home.”</blockquote>
+          <dl><dt>Feels like</dt><dd>A magazine feature: big elegant headlines, large photos</dd><dt>Best for</dt><dd>Owners judging quality of care</dd></dl>
+          <div class="btns"><a class="btn solid" href="01-golden-hour.html">Open concept 01</a></div></div>
+      </article>
+      <article class="card">
+        <div class="shots"><img class="desk" src="02-sea-and-sun-desktop.jpg" alt="Sea and Sun concept on a laptop" width="864" height="540" loading="lazy"><img class="phone" src="02-sea-and-sun-phone.jpg" alt="Sea and Sun concept on a phone" width="390" height="780" loading="lazy"></div>
+        <div class="body"><span class="num">Concept 02</span><h3>Sea &amp; Sun</h3><blockquote>“Ride with confidence.”</blockquote>
+          <dl><dt>Feels like</dt><dd>Bright Florida morning, waves from the logo, a “who’s riding?” picker</dd><dt>Best for</dt><dd>Parents and beginner riders</dd></dl>
+          <div class="btns"><a class="btn solid" href="02-sea-and-sun.html">Open concept 02</a></div></div>
+      </article>
+      <article class="card">
+        <div class="shots"><img class="desk" src="03-tack-room-desktop.jpg" alt="Tack Room concept on a laptop" width="864" height="540" loading="lazy"><img class="phone" src="03-tack-room-phone.jpg" alt="Tack Room concept on a phone" width="390" height="780" loading="lazy"></div>
+        <div class="body"><span class="num">Concept 03</span><h3>Tack Room</h3><blockquote>“Quiet barn. Serious care.”</blockquote>
+          <dl><dt>Feels like</dt><dd>Oiled leather and brass, stall nameplates, a property spec sheet</dd><dt>Best for</dt><dd>Premium and show boarders</dd></dl>
+          <div class="btns"><a class="btn solid" href="03-tack-room.html">Open concept 03</a></div></div>
+      </article>
+      <article class="card">
+        <div class="shots"><img class="desk" src="04-ranch-ledger-desktop.jpg" alt="Ranch Ledger concept on a laptop" width="864" height="540" loading="lazy"><img class="phone" src="04-ranch-ledger-phone.jpg" alt="Ranch Ledger concept on a phone" width="390" height="780" loading="lazy"></div>
+        <div class="body"><span class="num">Concept 04</span><h3>Ranch Ledger</h3><blockquote>“Board here and stop worrying.”</blockquote>
+          <dl><dt>Feels like</dt><dd>Plainspoken barn office: a side-by-side board comparison, answers written out</dd><dt>Best for</dt><dd>Practical owners comparing barns</dd></dl>
+          <div class="btns"><a class="btn solid" href="04-ranch-ledger.html">Open concept 04</a></div></div>
+      </article>
+      <article class="card">
+        <div class="shots"><img class="desk" src="05-arena-desktop.jpg" alt="Arena concept on a laptop" width="864" height="540" loading="lazy"><img class="phone" src="05-arena-phone.jpg" alt="Arena concept on a phone" width="390" height="780" loading="lazy"></div>
+        <div class="body"><span class="num">Concept 05</span><h3>Arena</h3><blockquote>“Built for the work.”</blockquote>
+          <dl><dt>Feels like</dt><dd>Athletic and bold; your arena drawn to scale against a dressage court</dd><dt>Best for</dt><dd>Riders in training and competition</dd></dl>
+          <div class="btns"><a class="btn solid" href="05-arena.html">Open concept 05</a></div></div>
+      </article>
+      <article class="card">
+        <div class="shots"><img class="desk" src="06-soleil-desktop.jpg" alt="Soleil concept on a laptop" width="864" height="540" loading="lazy"><img class="phone" src="06-soleil-phone.jpg" alt="Soleil concept on a phone" width="390" height="780" loading="lazy"></div>
+        <div class="body"><span class="num">Concept 06</span><h3>Soleil</h3><blockquote>“A little sun for every horse.”</blockquote>
+          <dl><dt>Feels like</dt><dd>Sunny and personal: postcards, the story of the name, the herd</dd><dt>Best for</dt><dd>Families and a community feel</dd></dl>
+          <div class="btns"><a class="btn solid" href="06-soleil.html">Open concept 06</a></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-logos">
+    <div class="sec-head"><h2 id="h-logos">Twelve logo concepts</h2><p>All twelve keep your emblem's sun, sea and chestnut horse. The horse is traced from your own chestnut portrait. Pick a top three.</p></div>
+    <div class="logos">
+      <article class="tile"><div class="art"><img src="01-classic-emblem.svg" alt="Classic emblem logo" loading="lazy"></div><div class="body"><h3>01 · Classic emblem, redrawn</h3><p>Your current emblem as clean, flat shapes that print and embroider well.</p><div class="btns"><a class="btn small" href="01-classic-emblem.svg" data-dl="mer-soleil-logo-01-classic-emblem.svg" download>SVG</a><a class="btn small" href="01-classic-emblem.png" data-dl="mer-soleil-logo-01-classic-emblem.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="02-horizontal-lockup.svg" alt="Horizontal lockup logo" loading="lazy"></div><div class="body"><h3>02 · Horizontal lockup</h3><p>Emblem beside the name. For the website header and email signature.</p><div class="btns"><a class="btn small" href="02-horizontal-lockup.svg" data-dl="mer-soleil-logo-02-horizontal-lockup.svg" download>SVG</a><a class="btn small" href="02-horizontal-lockup.png" data-dl="mer-soleil-logo-02-horizontal-lockup.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="03-seal-roundel.svg" alt="Seal logo" loading="lazy"></div><div class="body"><h3>03 · Seal</h3><p>Name set around the emblem. Stickers, saddle pads, social avatar.</p><div class="btns"><a class="btn small" href="03-seal-roundel.svg" data-dl="mer-soleil-logo-03-seal.svg" download>SVG</a><a class="btn small" href="03-seal-roundel.png" data-dl="mer-soleil-logo-03-seal.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art" style="background:#17284D"><img src="04-monoline.svg" alt="Monoline logo" loading="lazy"></div><div class="body"><h3>04 · Monoline</h3><p>A single gold line on navy. Embroidery, engraving, merch.</p><div class="btns"><a class="btn small" href="04-monoline.svg" data-dl="mer-soleil-logo-04-monoline.svg" download>SVG</a><a class="btn small" href="04-monoline.png" data-dl="mer-soleil-logo-04-monoline.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art" style="background:#F6F0E4"><img src="05-ms-monogram.svg" alt="MS monogram logo" loading="lazy"></div><div class="body"><h3>05 · MS monogram</h3><p>Interlocked M and S under a rising sun. Stall plates, blankets.</p><div class="btns"><a class="btn small" href="05-ms-monogram.svg" data-dl="mer-soleil-logo-05-monogram.svg" download>SVG</a><a class="btn small" href="05-ms-monogram.png" data-dl="mer-soleil-logo-05-monogram.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="06-sun-dot-wordmark.svg" alt="Sun-dot wordmark logo" loading="lazy"></div><div class="body"><h3>06 · Sun-dot wordmark</h3><p>“Mer Soleil” with a small sun dotting the i. Letterhead, text-only places.</p><div class="btns"><a class="btn small" href="06-sun-dot-wordmark.svg" data-dl="mer-soleil-logo-06-wordmark.svg" download>SVG</a><a class="btn small" href="06-sun-dot-wordmark.png" data-dl="mer-soleil-logo-06-wordmark.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="07-horseshoe-crest.svg" alt="Horseshoe crest logo" loading="lazy"></div><div class="body"><h3>07 · Horseshoe crest</h3><p>Sun and horse inside a horseshoe. Show banners, signage.</p><div class="btns"><a class="btn small" href="07-horseshoe-crest.svg" data-dl="mer-soleil-logo-07-horseshoe.svg" download>SVG</a><a class="btn small" href="07-horseshoe-crest.png" data-dl="mer-soleil-logo-07-horseshoe.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="08-heraldic-shield.svg" alt="Heraldic shield logo" loading="lazy"></div><div class="body"><h3>08 · Heraldic shield</h3><p>Shield, ribbon and waves. The classic equestrian look.</p><div class="btns"><a class="btn small" href="08-heraldic-shield.svg" data-dl="mer-soleil-logo-08-shield.svg" download>SVG</a><a class="btn small" href="08-heraldic-shield.png" data-dl="mer-soleil-logo-08-shield.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="09b-geometric-lockup.svg" alt="App icon logo with wordmark" loading="lazy"></div><div class="body"><h3>09 · App icon</h3><p>Horse in the sun over three waves. Favicon, app icon, Instagram.</p><div class="btns"><a class="btn small" href="09-geometric-icon.svg" data-dl="mer-soleil-logo-09-icon.svg" download>SVG</a><a class="btn small" href="09-geometric-icon.png" data-dl="mer-soleil-logo-09-icon.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="10-stacked-type.svg" alt="Stacked type logo" loading="lazy"></div><div class="body"><h3>10 · Stacked type</h3><p>Bold MER / SOLEIL with a small badge. Sporty, modern, apparel.</p><div class="btns"><a class="btn small" href="10-stacked-type.svg" data-dl="mer-soleil-logo-10-stacked.svg" download>SVG</a><a class="btn small" href="10-stacked-type.png" data-dl="mer-soleil-logo-10-stacked.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="11-ranch-brand.svg" alt="Ranch brand logo" loading="lazy"></div><div class="body"><h3>11 · Ranch brand</h3><p>An M on a wave bar with a rope border. Rustic merch.</p><div class="btns"><a class="btn small" href="11-ranch-brand.svg" data-dl="mer-soleil-logo-11-ranch-brand.svg" download>SVG</a><a class="btn small" href="11-ranch-brand.png" data-dl="mer-soleil-logo-11-ranch-brand.png" download>PNG</a></div></div></article>
+      <article class="tile"><div class="art"><img src="12-arch-window.svg" alt="Arch window logo" loading="lazy"></div><div class="body"><h3>12 · Arch window</h3><p>Horse and sunrise framed in an arch. A boutique, hospitality feel.</p><div class="btns"><a class="btn small" href="12-arch-window.svg" data-dl="mer-soleil-logo-12-arch.svg" download>SVG</a><a class="btn small" href="12-arch-window.png" data-dl="mer-soleil-logo-12-arch.png" download>PNG</a></div></div></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-next">
+    <div class="sec-head"><h2 id="h-next">What happens next</h2></div>
+    <ol class="next">
+      <li><h3>Pick a direction</h3><p>One concept, or a mix. Plus your top three logos.</p></li>
+      <li><h3>Answer a few questions</h3><p>Names, photos, what's included in each board type, lesson details. Short answers are fine.</p></li>
+      <li><h3>We build it</h3><p>About a week from your answers to a live site, with one round of changes before launch.</p></li>
+    </ol>
+  </section>
+
+  <p class="foot">These are concepts, not the finished site. Highlighted placeholders on the sample sites, like testimonials and “to confirm” notes, are waiting on your answers. No facts, reviews or credentials were invented.</p>
+</main>
+
+</body>
+</html>
